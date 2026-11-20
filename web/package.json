@@ -1,0 +1,30 @@
+{
+  "name": "afet-bagis-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "sync-abi": "node scripts/sync-abi.mjs",
+    "dev": "npm run sync-abi && vite",
+    "dev:sepolia": "npm run sync-abi && vite --mode sepolia",
+    "build:sepolia": "npm run sync-abi && tsc --noEmit && vite build --mode sepolia",
+    "yayinla": "npm run build:sepolia && npx --yes gh-pages -d dist",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.58.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.6"
+  }
+}
