@@ -1,7 +1,5 @@
 node_modules
 dist
-# scripts/sync-abi.mjs tarafından otomatik üretilir
-src/contract/YardimKampanyasi.ts
 
 # Yerel ortam dosyaları
 .env.*.local
